@@ -26,6 +26,7 @@ def merge_videos(video_paths, output_path):
     try:
         subprocess.run(command, check=True)
         logging.info("Video birleştirme başarılı")
+        print({output_path})
     # except subprocess.CalledProcessError as e:
     #     logging.error(f"Video birleştirme hatası: {e}")
     # except FileNotFoundError as e:
@@ -34,8 +35,8 @@ def merge_videos(video_paths, output_path):
         logging.error(f"Video birleştirme hatası: {e}")
     except FileNotFoundError as e:
         logging.error(f"Dosya bulunamadı - {e}")
-    finally:
-        print("İşlem sonlandı")
+    # finally:
+    #     print("İşlem sonlandı")
 
 
 

@@ -1,3 +1,5 @@
 INFO:root:Video birleştirme başarılı
 INFO:root:Video birleştirme başarılı
 ERROR:root:Video birleştirme hatası: Command '['ffmpeg', '-i', 'Videos/video3.mp4', '-i', 'Videos/video4.mp4', '-filter_complex', 'concat=n=2:v=1:a=0[v]', '-map', '[v]', 'Videos/merged_output.mp4']' returned non-zero exit status 254.
+INFO:root:Video birleştirme başarılı
+INFO:root:Video birleştirme başarılı
